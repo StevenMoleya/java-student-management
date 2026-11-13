@@ -1,6 +1,6 @@
 # Java Student Management System
 
-A console-based Student Management System built with Java. The application allows users to register, manage, search, and track student records. Student information is saved to a text file so that records remain available when the application is restarted.
+A console-based Student Management System developed using Java. The application allows users to register, manage, search, and track student records. Student information is stored locally using file handling, allowing records to persist between application runs.
 
 ## Features
 
@@ -10,85 +10,77 @@ A console-based Student Management System built with Java. The application allow
 - Update student information
 - Delete student records
 - Add marks to student records
-- Calculate student average marks
-- Validate student input
-- Save and load student records using file handling
+- Calculate average marks
+- Validate user input
 - Automatically assign student IDs
+- Save and load student records using file handling
 
-## Technologies Used
+## Technologies
 
 - Java 25
 - Apache Maven
 - JUnit 5
-- File Handling
-- VS Code
+- Git and GitHub
+- Visual Studio Code
 
 ## Project Structure
 
 ```text
 java-student-management/
-├── data/
-│   └── students.txt
 ├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── src/
-│   │           ├── Main.java
-│   │           ├── Student.java
-│   │           ├── StudentManager.java
-│   │           └── FileHandler.java
-│   └── test/
-│       └── java/
-│           └── src/
-│               ├── StudentTest.java
-│               └── StudentManagerTest.java
+│   ├── main/java/src/
+│   │   ├── Main.java
+│   │   ├── Student.java
+│   │   ├── StudentManager.java
+│   │   └── FileHandler.java
+│   └── test/java/src/
+│       ├── StudentTest.java
+│       └── StudentManagerTest.java
 ├── pom.xml
 ├── README.md
 └── .gitignore
 ```
 
-## How to Run
+The `data/` directory and `students.txt` file are created locally when the application saves student records.
 
-### Requirements
+## Requirements
 
 - Java JDK 25 or later
 - Apache Maven 3.10.0 or later
 
-### Build the Project
+## Build the Project
 
 ```bash
 mvn clean package
 ```
 
-### Run the Application
+## Run the Application
 
 ```bash
 java -cp target/classes src.Main
 ```
 
-## Running Tests
-
-Run the automated JUnit tests using:
+## Run Automated Tests
 
 ```bash
 mvn test
 ```
 
-The tests cover student creation, input validation, average calculations, student management operations, and automatic ID assignment.
+The project includes JUnit 5 tests covering student creation, validation, average calculations, student management operations, and automatic ID assignment.
 
 ## Data Storage
 
-Student records are stored locally in:
+Student records are saved in:
 
 ```text
 data/students.txt
 ```
 
-The application automatically loads saved records when it starts and saves changes during use.
+The application loads existing records when it starts and saves changes during use.
 
 ## Author
 
 **Steven Moleya**
 
 - GitHub: [StevenMoleya](https://github.com/StevenMoleya)
-- LinkedIn: [Steven Moleya](https://linkedin.com/in/steven-moleya)
+- LinkedIn: [Steven Moleya](https://www.linkedin.com/in/steven-moleya/)

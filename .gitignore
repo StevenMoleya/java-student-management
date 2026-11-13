@@ -1,0 +1,22 @@
+
+# Maven build output
+target/
+
+# Compiled Java files
+*.class
+out/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local student data
+data/students.txt
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp

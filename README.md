@@ -15,6 +15,20 @@ A console-based Student Management System developed using Java. The application 
 - Automatically assign student IDs
 - Save and load student records using file handling
 
+## Application Screenshots
+
+### Main Menu
+
+![Application Main Menu](screenshots/main-menu.png)
+
+### Student Registration
+
+![Student Registration](screenshots/student-registration.png)
+
+### Student Records
+
+![Student Records](screenshots/student-records.png)
+
 ## Technologies
 
 - Java 25
